@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav {
+  display: flex;
+  /* flex-direction: row;
+  justify-content: space-between; */
+  align-items: center;
+  height: 60px;
+  width:auto;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+}
+
+.search-bar {
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; */
+}
+
+.search-bar input {
+  /* flex:1; */
+  font-size: 16px;
+  color: lightgray;
+  background: none;
+  border: none;
+  margin-left: 6px;
+}
+
+.search-bar input:focus {
+  outline: none;
+  color: black;
+}
+
+.menu-trigger img {
+  /* position: absolute;
+  top: 20px;
+  right: 20px; */
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #f6f6f6;
+  border-radius: 16px;
+  padding-top: 20px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 200px;
+}
+
+.dropdown-menu img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-left: 25%;
+}
+
+.dropdown-menu h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.2rem;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.17);
+}
+
+.dropdown-menu ul {
+  padding-left: 6px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.menu-options {
+  margin-top: 6px;
+}
+
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  width: 20px;
+  background: violet;
+  transform: rotate(45deg);
+}
+
+.dropdown-menu.active {
+  opacity: 1;
+  visibility: visible;
+  /* transform: translateY(0); */
+  /* transition: 0.2s ; */
+}
+.dropdown-menu.inactive {
+  opacity: 0;
+  visibility: visible;
+  /* transform: translateY(0); */
+  /* transition: 0.2s ; */
+}
+
+/* -------------Responsiveness-------------- */
+
+@media (min-width: 1441px) {
+  .menu-trigger img {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 1200px) {
+  .menu-trigger img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .menu-trigger img {
+    height: 30px;
+    width: 30px;
+  }
+}

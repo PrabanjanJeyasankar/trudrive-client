@@ -1,4 +1,16 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  /* max-width: 1280px;
+  margin: 0 auto; */
+  
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
 }

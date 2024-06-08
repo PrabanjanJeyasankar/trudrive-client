@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.sidebar {
+  margin-right: 6px;
+  padding-right: 2rem;
+  border-right: 0.5px solid rgba(0, 0, 0, 0.17);
+  padding-top: 1rem;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.head {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-left: 24px;
+  gap: 6px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.home,
+.my-drive,
+.recent-access,
+.favorites,
+.shared-with-me,
+.trash {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 12px 12px 24px;
+  text-decoration: none;
+  color: black;
+  border-radius: 0 100px 100px 0;
+}
+
+.trash {
+  /* margin-top: auto; */
+  position: absolute;
+  bottom: 0;
+  padding: 12px 12px 12px 24px;
+  margin-bottom: 1rem;
+}
+
+.home:hover,
+.my-drive:hover,
+.recent-access:hover,
+.favorites:hover,
+.shared-with-me:hover,
+.trash:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* .top-navbar{
+  flex-grow: 4;
+} */
